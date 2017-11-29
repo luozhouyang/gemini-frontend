@@ -6,13 +6,15 @@ import {AboutComponent} from './about/about.component';
 import {MatToolbarModule, MatIconModule, MatTabsModule} from '@angular/material';
 import { BlogsComponent } from './blogs/blogs.component';
 import { ResumeComponent } from './resume/resume.component';
+import { AdsComponent } from './ads/ads.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     BlogsComponent,
-    ResumeComponent
+    ResumeComponent,
+    AdsComponent
   ],
   imports: [
     BrowserModule,
