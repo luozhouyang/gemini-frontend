@@ -5,12 +5,14 @@ import {AppComponent} from './app.component';
 import {AboutComponent} from './about/about.component';
 import {MatToolbarModule, MatIconModule, MatTabsModule} from '@angular/material';
 import { BlogsComponent } from './blogs/blogs.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    BlogsComponent
+    BlogsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
