@@ -4,11 +4,13 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {AboutComponent} from './about/about.component';
 import {MatToolbarModule, MatIconModule, MatTabsModule} from '@angular/material';
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    BlogsComponent
   ],
   imports: [
     BrowserModule,
