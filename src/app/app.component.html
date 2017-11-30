@@ -5,13 +5,14 @@
 <mat-icon>more_vert</mat-icon>
 </mat-toolbar>
 <mat-tab-group color="accent">
-  <mat-tab label="Blog"></mat-tab>
-  <mat-tab label="About"></mat-tab>
-  <mat-tab label="Resume"></mat-tab>
-  <mat-tab label="ADs"></mat-tab>
+  <mat-tab label="Blog" routerLink='/blogs'></mat-tab>
+  <mat-tab label="About" routerLink='/about'></mat-tab>
+  <mat-tab label="Resume" routerLink='/resume'></mat-tab>
+  <mat-tab label="ADs" routerLink='/ads'></mat-tab>
   <!--<mat-tab>-->
   <!--<ng-template mat-tab-label="">-->
   <!--<mat-icon>home</mat-icon>-->
   <!--</ng-template>-->
   <!--</mat-tab>-->
 </mat-tab-group>
+<router-outlet></router-outlet>
