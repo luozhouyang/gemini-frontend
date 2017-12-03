@@ -8,7 +8,7 @@ import {MatIconModule, MatTabsModule, MatToolbarModule} from '@angular/material'
 import {BlogsComponent} from './blogs/blogs.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
-import {AboutService} from './about.service';
+import {AboutService} from './about/about.service';
 import {RoutingModule} from './routing.module';
 
 @NgModule({
@@ -31,6 +31,5 @@ import {RoutingModule} from './routing.module';
   bootstrap: [AppComponent]
 })
 export class AppModule {
-
 }
 

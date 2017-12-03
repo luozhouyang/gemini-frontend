@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {AboutService} from '../about.service';
+import {AboutService} from './about.service';
 import {About} from './about';
 
 @Component({
@@ -13,6 +13,7 @@ export class AboutComponent implements OnInit {
 
   constructor(private service: AboutService) {
   }
+
 
   ngOnInit() {
     this.setAboutInfo();
