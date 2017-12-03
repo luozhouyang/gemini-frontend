@@ -9,6 +9,7 @@ import {BlogsComponent} from './blogs/blogs.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
 import {AboutService} from './about/about.service';
+import {BlogsService} from './blogs/blogs.service';
 import {RoutingModule} from './routing.module';
 
 @NgModule({
@@ -27,7 +28,7 @@ import {RoutingModule} from './routing.module';
     MatTabsModule,
     RoutingModule,
   ],
-  providers: [AboutService],
+  providers: [AboutService, BlogsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
