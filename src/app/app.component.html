@@ -3,7 +3,15 @@
   <mat-toolbar-row>
     <div class="title">LuoZhouYang's Website</div>
     <span class="fill-remaining-space"></span>
-    <mat-icon>more_vert</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="login()">
+        <mat-icon>settings</mat-icon>
+        <span>Console</span>
+      </button>
+    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 

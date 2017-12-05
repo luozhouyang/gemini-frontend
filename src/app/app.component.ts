@@ -13,4 +13,9 @@ export class AppComponent {
     {path: '/contact', label: 'Contact'},
     {path: '/ads', label: 'ADs'}
   ];
+
+  public login() {
+    console.log('Login...');
+  }
+
 }
