@@ -13,6 +13,7 @@ import {BlogsService} from './blogs/blogs.service';
 import {ResumeService} from './resume/resume.service';
 import {RoutingModule} from './routing.module';
 import {ContactComponent} from './contact/contact.component';
+import {ContactService} from './contact/contact.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import {ContactComponent} from './contact/contact.component';
     MatTabsModule,
     RoutingModule,
   ],
-  providers: [AboutService, BlogsService, ResumeService],
+  providers: [AboutService, BlogsService, ResumeService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
