@@ -10,7 +10,9 @@ import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
 import {AboutService} from './about/about.service';
 import {BlogsService} from './blogs/blogs.service';
+import {ResumeService} from './resume/resume.service';
 import {RoutingModule} from './routing.module';
+import {ContactComponent} from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import {RoutingModule} from './routing.module';
     AboutComponent,
     BlogsComponent,
     ResumeComponent,
-    AdsComponent
+    AdsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,7 @@ import {RoutingModule} from './routing.module';
     MatTabsModule,
     RoutingModule,
   ],
-  providers: [AboutService, BlogsService],
+  providers: [AboutService, BlogsService, ResumeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

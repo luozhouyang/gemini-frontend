@@ -8,8 +8,9 @@ import {Component} from '@angular/core';
 export class AppComponent {
   tabs = [
     {path: '/blogs', label: 'Blogs'},
-    {path: '/about', label: 'About'},
     {path: '/resume', label: 'Resume'},
+    {path: '/about', label: 'About'},
+    {path: '/contact', label: 'Contact'},
     {path: '/ads', label: 'ADs'}
   ];
 }
