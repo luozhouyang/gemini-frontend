@@ -1,0 +1,14 @@
+<mat-dialog-container>
+  <mat-dialog-content>
+    <span class="mat-error" *ngIf="error">{{error}}</span>
+    <mat-input-container>
+      <input matInput placeholder="Username">
+    </mat-input-container>
+    <mat-input-container>
+      <input matInput placeholder="Password">
+    </mat-input-container>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button>Login</button>
+  </mat-dialog-actions>
+</mat-dialog-container>
