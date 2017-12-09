@@ -32,5 +32,5 @@ const routes: Routes = [
     CanDeactivateGuard
   ]
 })
-export class RoutingModule {
+export class AppRoutingModule {
 }

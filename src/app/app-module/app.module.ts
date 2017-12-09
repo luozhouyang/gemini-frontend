@@ -21,7 +21,7 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {AboutService} from './about/about.service';
 import {BlogsService} from './blogs/blogs.service';
 import {ResumeService} from './resume/resume.service';
-import {RoutingModule} from './app-routing.module';
+import {AppRoutingModule} from './app-routing.module';
 import {ContactComponent} from './contact/contact.component';
 import {ContactService} from './contact/contact.service';
 import {Router} from '@angular/router';
@@ -43,7 +43,7 @@ import {Router} from '@angular/router';
     MatToolbarModule,
     MatIconModule,
     MatTabsModule,
-    RoutingModule,
+    AppRoutingModule,
     MatMenuModule,
     MatButtonModule,
     MatDialogModule,
