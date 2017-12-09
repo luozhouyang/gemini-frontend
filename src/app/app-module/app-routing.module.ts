@@ -5,7 +5,7 @@ import {AboutComponent} from './about/about.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
 import {ContactComponent} from './contact/contact.component';
-import {PageNotFoundComponent} from './page-not-found.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 import {AuthGuardService} from '../login-module/login/auth-guard.service';
 import {CanDeactivateGuard} from '../login-module/login/can-deactive-guard.service';

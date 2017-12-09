@@ -17,7 +17,7 @@ import {BlogsComponent} from './blogs/blogs.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
 import {LoginComponent} from '../login-module/login/login.component';
-import {PageNotFoundComponent} from './page-not-found.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {AboutService} from './about/about.service';
 import {BlogsService} from './blogs/blogs.service';
 import {ResumeService} from './resume/resume.service';
