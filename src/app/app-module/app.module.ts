@@ -4,14 +4,24 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {AppComponent} from './app.component';
 import {AboutComponent} from './about/about.component';
-import {MatIconModule, MatMenuModule, MatTabsModule, MatToolbarModule, MatButtonModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatDialogModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+  MatTabsModule,
+  MatToolbarModule
+} from '@angular/material';
 import {BlogsComponent} from './blogs/blogs.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
+import {LoginComponent} from '../login-module/login/login.component';
+import {PageNotFoundComponent} from './page-not-found.component';
 import {AboutService} from './about/about.service';
 import {BlogsService} from './blogs/blogs.service';
 import {ResumeService} from './resume/resume.service';
-import {RoutingModule} from './routing.module';
+import {RoutingModule} from './app-routing.module';
 import {ContactComponent} from './contact/contact.component';
 import {ContactService} from './contact/contact.service';
 
@@ -22,7 +32,9 @@ import {ContactService} from './contact/contact.service';
     BlogsComponent,
     ResumeComponent,
     AdsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +44,9 @@ import {ContactService} from './contact/contact.service';
     MatTabsModule,
     RoutingModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [AboutService, BlogsService, ResumeService, ContactService],
   bootstrap: [AppComponent]

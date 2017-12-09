@@ -5,15 +5,23 @@ import {AboutComponent} from './about/about.component';
 import {ResumeComponent} from './resume/resume.component';
 import {AdsComponent} from './ads/ads.component';
 import {ContactComponent} from './contact/contact.component';
+import {PageNotFoundComponent} from './page-not-found.component';
 
+import {AuthGuardService} from '../login-module/login/auth-guard.service';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/blogs', pathMatch: 'full'},
+  {
+    path: 'admin',
+    loadChildren: 'app/admin-module/admin.module#AdminModule',
+    canLoad: [AuthGuardService]
+  },
   {path: 'blogs', component: BlogsComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'ads', component: AdsComponent}
+  {path: 'ads', component: AdsComponent},
+  {path: '', redirectTo: '/blogs', pathMatch: 'full'},
+  {path: '**', component: PageNotFoundComponent}
 ];
 
 @NgModule({

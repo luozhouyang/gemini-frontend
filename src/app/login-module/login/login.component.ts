@@ -3,7 +3,6 @@ import {NavigationExtras, Router} from '@angular/router';
 import {AuthService} from './auth.service';
 
 @Component({
-  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
@@ -22,13 +21,12 @@ export class LoginComponent implements OnInit {
     this.message = 'Logged ' + this.authService.isLoggedIn ? 'in' : 'out';
   }
 
-  login(): void {
-    this.authService.login().subscribe(
-      () => {
+  login() {
+    this.authService.login().subscribe(() => {
         this.setMessage();
         if (this.authService.isLoggedIn) {
-          let redirect = this.authService.redirectUtl ? this.authService.redirectUtl : '/admin';
-          let navigationExtras: NavigationExtras = {
+          const redirect = this.authService.redirectUtl ? this.authService.redirectUtl : '/admin';
+          const navigationExtras: NavigationExtras = {
             queryParamsHandling: 'preserve',
             preserveFragment: true
           };
@@ -38,7 +36,7 @@ export class LoginComponent implements OnInit {
     );
   }
 
-  logout(): void {
+  logout() {
     this.authService.logout();
     this.setMessage();
   }
