@@ -8,6 +8,7 @@ import {ContactComponent} from './contact/contact.component';
 import {PageNotFoundComponent} from './page-not-found.component';
 
 import {AuthGuardService} from '../login-module/login/auth-guard.service';
+import {CanDeactivateGuard} from '../login-module/login/can-deactive-guard.service';
 
 const routes: Routes = [
   {
@@ -26,7 +27,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    CanDeactivateGuard
+  ]
 })
 export class RoutingModule {
 }
