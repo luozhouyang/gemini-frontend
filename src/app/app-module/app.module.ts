@@ -24,6 +24,7 @@ import {ResumeService} from './resume/resume.service';
 import {RoutingModule} from './app-routing.module';
 import {ContactComponent} from './contact/contact.component';
 import {ContactService} from './contact/contact.service';
+import {Router} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -52,5 +53,9 @@ import {ContactService} from './contact/contact.service';
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
 }
 
