@@ -7,7 +7,7 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="login()">
+      <button mat-menu-item routerLink="/admin">
         <mat-icon>settings</mat-icon>
         <span>Console</span>
       </button>
@@ -16,11 +16,7 @@
 </mat-toolbar>
 
 <nav mat-tab-nav-bar aria-label="nav" color="accent">
-  <a mat-tab-link
-     *ngFor="let tab of tabs"
-     [routerLink]="tab.path"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
+  <a mat-tab-link *ngFor="let tab of tabs" [routerLink]="tab.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
     {{tab.label}}
   </a>
 </nav>
