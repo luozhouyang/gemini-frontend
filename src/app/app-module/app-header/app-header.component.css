@@ -1,0 +1,17 @@
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar span{
+  font-size: 14px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.title{
+  font-size: 22px;
+  text-align: start;
+  color:#ffffff;
+
+}

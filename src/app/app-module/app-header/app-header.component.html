@@ -1,0 +1,21 @@
+<mat-toolbar color="accent">
+  <mat-toolbar-row>
+    <div class="title">LuoZhouYang's Website</div>
+    <span class="fill-remaining-space"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/admin">
+        <mat-icon>settings</mat-icon>
+        <span>Console</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<nav mat-tab-nav-bar aria-label="nav" color="accent">
+  <a mat-tab-link *ngFor="let tab of tabs" [routerLink]="tab.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+    {{tab.label}}
+  </a>
+</nav>
