@@ -28,6 +28,7 @@ import { AboutService } from './about/about.service';
 import { BlogsService } from './blogs/blogs.service';
 import { ResumeService } from './resume/resume.service';
 import { ContactService } from './contact/contact.service';
+import { AppHeaderComponent } from './app-header/app-header.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactService } from './contact/contact.service';
     AdsComponent,
     ContactComponent,
     LoginComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AppHeaderComponent
   ],
   imports: [
     BrowserModule,
