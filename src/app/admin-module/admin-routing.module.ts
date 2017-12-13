@@ -9,7 +9,7 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 
 const adminRoutes: Routes = [
   {
-    path: '',
+    path: 'admin',
     component: AdminComponent,
     canActivate: [AuthGuardService],
     children: [
