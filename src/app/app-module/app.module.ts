@@ -12,8 +12,11 @@ import {
   MatInputModule,
   MatMenuModule,
   MatTabsModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatCardModule,
+  MatFormFieldModule
 } from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -54,7 +57,11 @@ import { AppHeaderComponent } from './app-header/app-header.component';
     MatMenuModule,
     MatButtonModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule,
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AboutService, BlogsService, ResumeService, ContactService],
   bootstrap: [AppComponent]
